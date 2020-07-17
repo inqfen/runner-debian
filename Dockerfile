@@ -13,6 +13,7 @@ RUN apt update &&\
     unzip \
     postgresql-client-11 \
     mongodb-org-shell \
+    mongodb-org-tools \
     git \
     curl \
     python3 \
