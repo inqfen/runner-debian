@@ -35,10 +35,10 @@ RUN apt install -y --no-install-recommends --no-install-suggests \
     mv -f terraform /usr/bin/terraform &&\
     rm terraform_1.0.1_linux_amd64.zip &&\
 # Install helm
-    - wget https://get.helm.sh/helm-v3.6.2-linux-amd64.tar.gz
-    - tar -xzf helm-v3.6.2-linux-amd64.tar.gz
-    - mv linux-amd64/helm /usr/local/bin/helm
-    - rm helm-v3.6.2-linux-amd64.tar.gz
+    wget https://get.helm.sh/helm-v3.6.2-linux-amd64.tar.gz &&\
+    tar -xzf helm-v3.6.2-linux-amd64.tar.gz &&\
+    mv linux-amd64/helm /usr/local/bin/helm &&\
+    rm helm-v3.6.2-linux-amd64.tar.gz &&\
 # Install python packages
     pip3 install -U pip &&\
     pip3 install ansible==2.9.7 openshift pycrypto docker psycopg2 boto3 pymongo awscli mitogen==0.2.9 &&\
