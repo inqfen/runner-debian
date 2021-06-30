@@ -30,7 +30,7 @@ RUN apt install -y --no-install-recommends --no-install-suggests \
     gcc &&\
 
 # Install terraform
-    wget https://releases.hashicorp.com/terraform/0.12.24/terraform_1.0.1_linux_amd64.zip &&\
+    wget https://releases.hashicorp.com/terraform/1.0.1/terraform_1.0.1_linux_amd64.zip &&\
     unzip terraform_1.0.1_linux_amd64.zip &&\
     mv -f terraform /usr/bin/terraform &&\
     rm terraform_1.0.1_linux_amd64.zip &&\
