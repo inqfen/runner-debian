@@ -54,7 +54,7 @@ RUN apt update &&\
     rm helm-v3.6.2-linux-amd64.tar.gz &&\
 # Install python packages
     pip3 install -U pip &&\
-    pip3 install ansible-base=2.10.17 openshift pycrypto docker psycopg2 boto3 pymongo mitogen==0.3.2 &&\
+    pip3 install ansible-base==2.10.17 openshift pycrypto docker psycopg2 boto3 pymongo mitogen==0.3.2 --ignore-installed PyYAML &&\
 # Removing unnecessary packages
     apt remove -y postgresql-server-dev-13 build-essential gnupg gcc python3-pip python3-setuptools python3-dev apt-transport-https unzip lsb-release &&\
     apt autoremove -y &&\
